@@ -51,4 +51,5 @@ production:
   <<: *default
   database: pedidos_production
   username: pedidos
-  password: <%= ENV['PEDIDOS_DATABASE_PASSWORD'] %>
+  password: <%= ENV['PEDIDOS_DATABASE_PASSWORD']
+  url: <%= ENV['DATABASE_URL'] %>
