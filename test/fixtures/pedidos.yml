@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quantA: 1
+  quantB: 1
+  valA: 1.5
+  valB: 1.5
+  total: 1.5
+
+two:
+  quantA: 1
+  quantB: 1
+  valA: 1.5
+  valB: 1.5
+  total: 1.5

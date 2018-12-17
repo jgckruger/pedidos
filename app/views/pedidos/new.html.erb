@@ -1,0 +1,24 @@
+<h1>New Pedido</h1>
+
+<%= render 'form', pedido: @pedido %>
+<script type="text/javascript">
+  var formPedido;
+
+  formPedido = void 0;
+
+  formPedido = document.forms['formPedido'];
+
+  formPedido.pedido_quantA.value = 0;
+
+  formPedido.pedido_quantB.value = 0;
+
+  formPedido.pedido_quantA.onchange = function() {
+    formPedido.pedido_total.value = parseInt(formPedido.pedido_quantA.value) * parseInt(formPedido.pedido_valA.value) + parseInt(formPedido.pedido_quantB.value) * parseInt(formPedido.pedido_valB.value);
+  };
+
+  formPedido.pedido_quantB.onchange = function() {
+    formPedido.pedido_total.value = parseInt(formPedido.pedido_quantA.value) * parseInt(formPedido.pedido_valA.value) + parseInt(formPedido.pedido_quantB.value) * parseInt(formPedido.pedido_valB.value);
+  };
+</script>
+
+<%= link_to 'Back', pedidos_path %>
